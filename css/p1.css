@@ -1,0 +1,10 @@
+.external-style {
+    background-color: #a2d9ce; /* Light greenish-cyan */
+    color: #1f5d58; /* Dark green */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #1f5d58; /* Added border for emphasis */
+}
