@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Registration Form</title>
+    <script>
+        function validateForm() {
+            var name = document.forms["regForm"]["name"].value;
+            var email = document.forms["regForm"]["email"].value;
+            var password = document.forms["regForm"]["password"].value;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (name == "" || email == "" || password == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            
+            if (!emailPattern.test(email)) {
+                alert("Invalid email format");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form name="regForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="name"><br><br>
+        Email: <input type="text" name="email"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

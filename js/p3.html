@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over Event</title>
+    <script>
+        function changeContent() {
+            document.getElementById("text").innerHTML = "New Text Appeared!";
+            document.getElementById("image").src = "./dog.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h2>Hover over this text to see the change</h2>
+    <h4 id="text" onmouseover="changeContent()">Hover over me!</h4>
+    <br><br><br>
+    <img id="image" src="./cat-play.png" alt="Original Image">
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+    <script>
+        function changeColor() {
+            var colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</head>
+<body>
+    <h2>Click the button to change background color</h2>
+    <button onclick="changeColor()">Change Color</button>
+</body>
+</html>
